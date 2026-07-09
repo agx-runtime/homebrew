@@ -1,25 +1,25 @@
 class Agx < Formula
   desc "agx — the CLI: one-shot sandboxed commands daemonless, and the front door to everything else"
   homepage "https://github.com/agx-runtime/agx"
-  version "0.1.7"
+  version "0.1.8"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://get.agx.so/v0.1.7/agx-cli-aarch64-apple-darwin.tar.xz"
-    sha256 "3c10c69a869cd9630c024920bb64afd5112508babc6562fca61639312293135e"
-    mirror "https://github.com/agx-runtime/agx/releases/download/v0.1.7/agx-cli-aarch64-apple-darwin.tar.xz"
-    sha256 "3c10c69a869cd9630c024920bb64afd5112508babc6562fca61639312293135e"
+    url "https://get.agx.so/v0.1.8/agx-cli-aarch64-apple-darwin.tar.xz"
+    sha256 "95de7544a06cea61f6a37247eb615c9fd0b0f800c5b9d9d9c35c922da8149827"
+    mirror "https://github.com/agx-runtime/agx/releases/download/v0.1.8/agx-cli-aarch64-apple-darwin.tar.xz"
+    sha256 "95de7544a06cea61f6a37247eb615c9fd0b0f800c5b9d9d9c35c922da8149827"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://get.agx.so/v0.1.7/agx-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "421b909df346e36213509569cd922a8afece5951fb357b1cfce5d41793eb8959"
-      mirror "https://github.com/agx-runtime/agx/releases/download/v0.1.7/agx-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "421b909df346e36213509569cd922a8afece5951fb357b1cfce5d41793eb8959"
+      url "https://get.agx.so/v0.1.8/agx-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d69e311240b62905f69839310d2066da055c8035ecb350bd0cafb6d8170bcd4d"
+      mirror "https://github.com/agx-runtime/agx/releases/download/v0.1.8/agx-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d69e311240b62905f69839310d2066da055c8035ecb350bd0cafb6d8170bcd4d"
     end
     if Hardware::CPU.intel?
-      url "https://get.agx.so/v0.1.7/agx-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ddd4d061ae6ae25f35756fa26519e9fe1c9bcc763e10153476e41b83dbfce6df"
-      mirror "https://github.com/agx-runtime/agx/releases/download/v0.1.7/agx-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ddd4d061ae6ae25f35756fa26519e9fe1c9bcc763e10153476e41b83dbfce6df"
+      url "https://get.agx.so/v0.1.8/agx-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f08355f1f1b0c49a00ab6c51040154ac3c88e2b5fab5e6319807c6531b2922a8"
+      mirror "https://github.com/agx-runtime/agx/releases/download/v0.1.8/agx-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f08355f1f1b0c49a00ab6c51040154ac3c88e2b5fab5e6319807c6531b2922a8"
     end
   end
   license "AGPL-3.0"
